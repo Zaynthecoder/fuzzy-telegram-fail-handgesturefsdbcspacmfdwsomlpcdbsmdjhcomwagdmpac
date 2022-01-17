@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Hand Gestures</title>
+    </head>
+    <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+    
+      <body>
+      <div class="container">
+      
+        <center>
+          <h3 class="btn btn-warning heading">Take a selfie of a gesture to find its meaning
+            
+           
+          </h3>
+          <br><br>
+    
+          <p class="white" style="font-size: 22px;">Take your selfie to generate meaning of gesture
+
+          </p>
+          <span>&#9996;</span>
+          <span>&#128077;</span>
+          <span>&#128076;</span> <br><br>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <label class="white">meaning  - </label>
+            <p class="meaning_name" id="result_meaning_name"></p>
+            <p class="meaning" id="updated_meaning"></p>
+    
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <label class="white"> Webcam View - </label>
+            <div id="camera"></div>
+            </br><br>
+            <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
+          </div>
+    
+          
+    
+            
+    
+          <div class="col-md-4 col-sm-12 col-xs-12">
+              <label class="white">Snapshot - </label>
+            <div id="result"></div>
+            <br><br>
+            <button onclick="check();" class="btn btn-success">Find out meaning</button>
+          </div>
+
+          </div>
+
+        </center>
+
+
+    </body>
+</html>
